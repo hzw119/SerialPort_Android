@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget48"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00BCD4"
+            android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="接收区"
+                            android:textColor="#000000"
+                            android:layout_gravity="center"
+                            android:textSize="30sp"/>
+                        <TextView
+                            android:id="@+id/tv_receive"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:text=""
+                            android:layout_margin="20dp"
+                            android:textSize="35sp" />-->
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#009688"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送区"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:textSize="30sp"/>
+
+            <EditText
+                android:id="@+id/edit_send"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:textSize="30sp"
+                android:layout_margin="20dp"
+                android:ems="10" >
+                <requestFocus />
+            </EditText>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/open"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="#FF9800"
+                android:text="打开串口"
+                android:textSize="20dp"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="#8BC34A"
+                android:text="发送数据"
+                android:textSize="20dp"></Button>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/close"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="#FFEB3B"
+                android:text="关闭串口"
+                android:textSize="20dp"></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

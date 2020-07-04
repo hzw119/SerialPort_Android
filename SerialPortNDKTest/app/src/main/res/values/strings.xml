@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SerialPortNDK</string>
+    <string name="error_configuration">Please configure your serial port first.</string>
+    <string name="error_security">You do not have read/write permission to the serialport.</string>
+    <string name="error_unknown">The serial port can not be opened for an unknownreason.</string>
+
+</resources>
