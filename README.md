@@ -11,6 +11,7 @@
     1.AVD模拟的API应小于安卓版本5.0，否则可能出现权限问题（例如找不到system/bin/su），之前没注意权限问题，花了大量时间解决
     如何获取安卓模拟器的root权限,还遇到例如（cmd 执行adb root显示:adbd cannot run as root in production builds）的问题
     
-    2.利用cmd命令 (SDK路径)emulator @模拟器名字 -qemu -serial COMX(电脑串口号)
+    2.利用cmd命令 (SDK路径)emulator @模拟器名字 -qemu -serial COMX(电脑串口号)，
+      例如（D:\Program Files\Android\android-sdk-windows\emulator>emulator @Pixel_2_API_19 -qemu -serial COM1）
   
-    3.SerialPortTest ttyS2改成ttyS1，我用COM1表示安卓模拟器，如果用COM2应该要用ttyS2吧
+    3.错误类型tcgetattr() failed:  SerialPortTest类的 ttyS2改成ttyS1，我用COM1表示安卓模拟器，如果用COM2应该要用ttyS2吧
